@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meu primeiro Documento HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- <style>
+        h3{
+            color: red;
+        }
+        p{
+            background: rgb(200, 253, 5);
+            font-family: Verdana;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h3 id="titulo"> 
+        Um título de nível 3
+    </h3>
+    <p id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero similique aperiam iusto autem doloribus
+        velit maiores molestias adipisci debitis, excepturi praesentium repudiandae omnis perspiciatis iure nobis non
+        consectetur vel?
+    </p>
+    <script>
+        function mudaCorH3(){
+            titulo.style.color = 'green';
+        }
+
+        titulo.addEventListener('click',mudaCorH3);
+
+
+        function adicionaP(){
+            // criar o parágrafo
+            const p = document.createElement("p");
+            // criar um texto
+            const texto = document.createTextNode('Texto do novo parágrafo.')
+            // add o texto ao paragrafo
+            p.appendChild(texto);
+            // add o paragrafo ao body
+            document.body.appendChild(p);
+        }
+
+        par.addEventListener('click', adicionaP);
+    </script>
+</body>
+
+</html>
